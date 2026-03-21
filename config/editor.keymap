@@ -560,17 +560,27 @@
 
         combo_left_click {
             bindings = <&mkp LCLK>;
-            key-positions = <25 26>;
+            key-positions = <13 14>;
         };
 
         combo_middle_click {
             bindings = <&mkp MCLK>;
-            key-positions = <26 27>;
+            key-positions = <14 15>;
         };
 
         combo_right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <27 28>;
+            key-positions = <15 16>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+        };
+
+        Underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8>;
         };
     };
 };
@@ -649,10 +659,10 @@
         SYM {
             display-name = "Sym";
             bindings = <
-&none  &kp TILDE  &kp DLLR  &kp CARET  &move_line_up    &mc_add_above    &kp AMPS   &kp PLUS      &kp LBKT  &kp RBKT  &kp PRCNT  &kp BSLH
-&none  &kp UNDER  &kp LT    &kp GT     &kp BACKSPACE    &delete_line     &kp GRAVE  &kp KP_MINUS  &kp LPAR  &kp RPAR  &kp ASTRK  &kp PIPE
-&none  &home_dir  &none     &kp HASH   &move_line_down  &mc_add_below    &code_blk  &kp EQUAL     &kp LBRC  &kp RBRC  &kp AT     &kp FSLH
-                            &none      &trans           &trans           &trans     &trans
+&trans     &trans                &kp LESS_THAN         &kp DOLLAR         &kp GREATER_THAN       &trans      &trans       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RBKT         &trans    &kp BSLH
+&kp MINUS  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH    &kp PERCENT  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE  &kp PIPE  &kp PIPE
+&trans     &home_dir             &kp COLON             &kp ASTERISK       &kp PLUS               &trans      &trans       &kp AMPERSAND     &kp LCTRL       &kp TILDE        &trans    &kp FSLH
+                                                       &none              &trans                 &trans      &trans       &trans
             >;
         };
 
