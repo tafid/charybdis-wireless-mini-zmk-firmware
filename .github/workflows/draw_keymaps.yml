@@ -7,7 +7,7 @@ on:
 jobs:
   draw_base_keymap:
     name: Draw BASE keymap
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.23.0
     permissions:
       contents: write
     with:
@@ -15,8 +15,9 @@ jobs:
       config_path:    "keymap-drawer/config.yaml"
       output_folder:  "keymap-drawer/base"
       json_path:      "config"
-      parse_args:     "-c 12"
-      draw_args:      "qwerty:'-s BASE --keys-only'"
+      parse_args:     "qwerty:'-c 12'"
+      draw_args:      "qwerty:'-s Base --keys-only'"
+      install_version: "0.23.0"
       amend_commit:   false
       destination:    artifact
       commit_message: "Add BASE-layer keymaps"
@@ -26,7 +27,7 @@ jobs:
   draw_full_keymap:
     name: Draw FULL keymaps
     needs: draw_base_keymap
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.23.0
     permissions:
       contents: write
     with:
@@ -34,8 +35,9 @@ jobs:
       config_path:    "keymap-drawer/config.yaml"
       output_folder:  "keymap-drawer"
       json_path:      "config"
-      parse_args:     "-c 12"
+      parse_args:     "qwerty:'-c 12'"
       draw_args:      ""
+      install_version: "0.23.0"
       amend_commit:   false
       destination:    artifact
       commit_message: "Add full keymaps"
