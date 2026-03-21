@@ -10,7 +10,7 @@ COMBOS = ROOT / "config/keymap/combos.dtsi"
 MACROS = ROOT / "config/keymap/macros.dtsi"
 BEHAVIORS = ROOT / "config/keymap/behaviors.dtsi"
 
-OUT = ROOT / "firmwares/editor.keymap"
+OUT = ROOT / "config/editor.keymap"
 
 
 MARKERS = {
