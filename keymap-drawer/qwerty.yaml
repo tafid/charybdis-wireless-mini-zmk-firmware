@@ -105,9 +105,31 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Sym:
-  - ['', '~', $, ^, '&move_line_up', '&mc_add_above', '&', +, '[', ']', '%', \]
-  - ['', _, <, '>', BACK SPACE, '&delete_line', '`', '-', (, ), '*', '|']
-  - ['', ~/, '', '#', '&move_line_down', '&mc_add_below', '```', '=', '{', '}', '@', /]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - <
+    - $
+    - '>'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '['
+    - _
+    - ']'
+    - {t: ▽, type: trans}
+    - \
+  - ['-', \, (, '"', ), '#', '%', '{', '=', '}', '|', '|']
+  - - {t: ▽, type: trans}
+    - ~/
+    - ':'
+    - '*'
+    - +
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&'
+    - LCTRL
+    - '~'
+    - {t: ▽, type: trans}
+    - /
   - - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -235,9 +257,13 @@ combos:
   l: [Base]
 - p: [38, 39]
   k: L_BASE L_EXTRA
-- p: [25, 26]
+- p: [13, 14]
   k: L CLK
-- p: [26, 27]
+- p: [14, 15]
   k: Mid CLK
-- p: [27, 28]
+- p: [15, 16]
   k: R CLK
+- p: [3, 4]
+  k: '-'
+- p: [7, 8]
+  k: _
