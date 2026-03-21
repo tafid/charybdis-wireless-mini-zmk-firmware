@@ -257,11 +257,11 @@ combos:
   l: [Base]
 - p: [38, 39]
   k: L_BASE L_EXTRA
-- p: [13, 14]
+- p: [25, 26]
   k: L CLK
-- p: [14, 15]
+- p: [26, 27]
   k: Mid CLK
-- p: [15, 16]
+- p: [27, 28]
   k: R CLK
 - p: [3, 4]
   k: '-'
