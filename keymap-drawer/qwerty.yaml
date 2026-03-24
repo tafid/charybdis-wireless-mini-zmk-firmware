@@ -86,7 +86,7 @@ layers:
     - UP ARROW
     - RIGHT
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - DELETE
   - - {t: ▽, type: trans}
     - MOVE L
     - MOVE D
@@ -98,7 +98,7 @@ layers:
     - PAGE UP
     - END
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - INS
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
