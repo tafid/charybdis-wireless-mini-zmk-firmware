@@ -88,10 +88,10 @@ layers:
     - {t: ▽, type: trans}
     - DELETE
   - - {t: ▽, type: trans}
-    - MOVE L
-    - MOVE D
-    - MOVE UP
-    - MOVE R
+    - L CLK
+    - Mid CLK
+    - R CLK
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - HOME
     - PAGE DOWN
