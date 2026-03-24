@@ -18,7 +18,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N1>, <&kp F1>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 1,  with Shift → F1
         };
 
@@ -26,7 +28,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N2>, <&kp F2>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 2,  with Shift → F2
         };
 
@@ -34,7 +38,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N3>, <&kp F3>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 3,  with Shift → F3
         };
 
@@ -42,7 +48,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N4>, <&kp F4>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 4,  with Shift → F4
         };
 
@@ -50,7 +58,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N5>, <&kp F5>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 5,  with Shift → F5
         };
 
@@ -58,7 +68,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N6>, <&kp F6>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 6,  with Shift → F6
         };
 
@@ -66,7 +78,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N7>, <&kp F7>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 7,  with Shift → F7
         };
 
@@ -74,7 +88,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp F8>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 8,  with Shift → F8
         };
 
@@ -82,7 +98,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp F9>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → 9,  with Shift → F9
         };
 
@@ -90,7 +108,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp PRCNT>, <&kp F10>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → % (PRCNT),  with Shift → F10
         };
 
@@ -98,7 +118,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp ASTRK>, <&kp F11>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → * (ASTRK),  with Shift → F11
         };
 
@@ -106,7 +128,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp F12>;
+
             mods = <MOD_LSFT>;
+
             // no modifier → . (DOT),    with Shift → F12
         };
 
@@ -121,7 +145,9 @@
             require-prior-idle-ms = <165>;
             retro-tap;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
+
             // HRM for the LEFT hand: hold → modifier (1st param), tap → key (2nd param).
             // Hold only triggers when a RIGHT-hand or thumb key follows (prevents accidental mods).
         };
@@ -137,7 +163,9 @@
             require-prior-idle-ms = <155>;
             retro-tap;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
+
             // HRM for the RIGHT hand: hold → modifier (1st param), tap → key (2nd param).
             // Hold only triggers when a LEFT-hand or thumb key follows (prevents accidental mods).
         };
@@ -159,6 +187,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <170>;
             bindings = <&mo>, <&kp>;
+
             // Helper hold-tap (tap-preferred, 170ms).
             // hold → &mo <layer> (momentary),  tap → &kp <key>
         };
@@ -181,6 +210,7 @@
             tapping-term-ms = <40>;
             hold-while-undecided;
             bindings = <&mo>, <&mkp>;
+
             // Helper hold-tap (hold-preferred, 40ms, hold-while-undecided).
             // hold → &mo <layer> (momentary),  tap → &mkp <mouse-button>
         };
@@ -203,6 +233,7 @@
             tapping-term-ms = <40>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
+
             // Helper hold-tap (hold-preferred, 40ms, hold-while-undecided).
             // hold → &mo <layer> (momentary),  tap → &kp <key>
         };
@@ -224,6 +255,7 @@
             flavor = "balanced";
             tapping-term-ms = <125>;
             bindings = <&mo>, <&to>;
+
             // Helper hold-tap (balanced, 125ms).
             // hold → &mo <layer> (momentary),  tap → &to <layer> (permanent switch)
         };
@@ -260,7 +292,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
+
             // no modifier → ? (QUESTION),  with Shift → ! (EXCLAMATION)
         };
 
@@ -268,7 +302,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COLON>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
+
             // no modifier → . (PERIOD),    with Shift → : (COLON)
         };
 
@@ -276,7 +312,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
+
             // no modifier → , (COMMA),     with Shift → ; (SEMICOLON)
         };
     };
