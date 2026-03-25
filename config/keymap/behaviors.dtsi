@@ -184,13 +184,13 @@
         td_lclk_scrl_slow: td_lclk_scrl_slow {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&mo_clk 7 LCLK>, <&mkp LCLK>;
+            tapping-term-ms = <250>;
+            bindings = <&mkp LCLK>, <&mo_clk 7 LCLK>;
 
             // tap             → Left click (LCLK)
-            // hold            → Layer 7: trackball → scroll (scroller mode)
+            // hold            → Left click held (LCLK)
             // double-tap      → Left click (LCLK)
-            // double-tap+hold → Left click held (LCLK)
+            // double-tap+hold → Layer 7: trackball → scroll (scroller mode)
         };
 
         lt_nav: nav_layer_tap {

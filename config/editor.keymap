@@ -1,6 +1,6 @@
 /* AUTO-GENERATED FILE — EDIT IN KEYMAP EDITOR */
-// BEGIN_BEHAVIORS
 
+// BEGIN_BEHAVIORS
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 19 20 21 22  // Left-hand keys.
 #define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 16 15 14 13  // Right-hand keys.
 #define THUMBS 36 37 38 39 40  // Thumb keys.
@@ -187,13 +187,13 @@
         td_lclk_scrl_slow: td_lclk_scrl_slow {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&mo_clk 7 LCLK>, <&mkp LCLK>;
+            tapping-term-ms = <250>;
+            bindings = <&mkp LCLK>, <&mo_clk 7 LCLK>;
 
             // tap             → Left click (LCLK)
-            // hold            → Layer 7: trackball → scroll (scroller mode)
+            // hold            → Left click held (LCLK)
             // double-tap      → Left click (LCLK)
-            // double-tap+hold → Left click held (LCLK)
+            // double-tap+hold → Layer 7: trackball → scroll (scroller mode)
         };
 
         lt_nav: nav_layer_tap {
@@ -229,7 +229,6 @@
             // Helper hold-tap (hold-preferred, 40ms, hold-while-undecided).
             // hold → &mo <layer> (momentary),  tap → &mkp <mouse-button>
         };
-
 
 
         td_clk: td_clk {
@@ -338,8 +337,8 @@
 };
 
 // END_BEHAVIORS
-// BEGIN_MACROS
 
+// BEGIN_MACROS
 / {
     macros {
         v_split: v_split {
@@ -615,8 +614,8 @@
 };
 
 // END_MACROS
-// BEGIN_COMBOS
 
+// BEGIN_COMBOS
 / {
     combos {
         compatible = "zmk,combos";
@@ -665,6 +664,7 @@
 };
 
 // END_COMBOS
+
 // BEGIN_KEYMAP
 /* upstream bindings and behaviors */
 
