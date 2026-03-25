@@ -181,6 +181,16 @@
             // double-tap → Layer 6: trackball → slow pointer (2/6 speed scale)
         };
 
+        td_lclk_scrl_slow: td_lclk_scrl_slow {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&mo_clk 7 LCLK>, <&mo 6>;
+
+            // tap        → Left click (LCLK)
+            // hold       → Layer 7: trackball → scroll (scroller mode)
+        };
+
         lt_nav: nav_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
