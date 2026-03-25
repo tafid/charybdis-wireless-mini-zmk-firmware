@@ -15,7 +15,7 @@ layers:
     - {t: ;, h: RCMD}
     - ''''
   - [LEFT GUI, Z, X, C, V, B, N, M, ',', ., /, ']']
-  - - '&td_lclk_scrl_slow'
+  - - L CLK
     - '&td_space_num'
     - {t: TAB, h: Nav}
     - ENTER
@@ -268,4 +268,4 @@ combos:
 - p: [7, 8]
   k: _
 - p: [13, 14]
-  k: ESC
+  k: ESC SCRL SLOW
