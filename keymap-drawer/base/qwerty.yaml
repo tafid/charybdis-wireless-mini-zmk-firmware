@@ -14,8 +14,8 @@ layers:
     - {t: L, h: LALT}
     - {t: ;, h: RCMD}
     - ''''
-  - ['&td_lclk_scrl_slow', Z, X, C, V, B, N, M, ',', ., /, ']']
-  - - LEFT GUI
+  - [LEFT GUI, Z, X, C, V, B, N, M, ',', ., /, ']']
+  - - '&td_lclk_scrl_slow'
     - '&td_space_num'
     - {t: TAB, h: Nav}
     - ENTER
