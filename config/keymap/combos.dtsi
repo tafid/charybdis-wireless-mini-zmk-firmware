@@ -39,7 +39,7 @@
         };
 
         esc {
-            bindings = <&kp ESC>;
+            bindings = <&td_esc_scrl_slow>;
             key-positions = <13 14>;
         };
     };
