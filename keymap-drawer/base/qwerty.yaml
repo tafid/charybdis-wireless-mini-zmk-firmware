@@ -2,7 +2,7 @@ layout: {zmk_keyboard: qwerty}
 layers:
   Base:
   - ['`', Q, W, E, R, T, Y, U, I, O, P, '[']
-  - - ESC SCRL SLOW
+  - - LEFT SHIFT
     - {t: A, h: LCMD}
     - {t: S, h: LALT}
     - {t: D, h: LSHFT}
@@ -14,7 +14,7 @@ layers:
     - {t: L, h: LALT}
     - {t: ;, h: RCMD}
     - ''''
-  - [LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, ']']
+  - ['&td_clk_scrl', Z, X, C, V, B, N, M, ',', ., /, ']']
   - - LEFT GUI
     - '&td_space_num'
     - {t: TAB, h: Nav}
@@ -267,3 +267,5 @@ combos:
   k: '-'
 - p: [7, 8]
   k: _
+- p: [13, 14]
+  k: ESC
