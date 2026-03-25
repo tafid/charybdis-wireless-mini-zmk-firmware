@@ -188,10 +188,12 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&mo_clk 7 LCLK>, <&mo 6>;
+            bindings = <&mo_clk 7 LCLK>, <&mkp LCLK>;
 
-            // tap        → Left click (LCLK)
-            // hold       → Layer 7: trackball → scroll (scroller mode)
+            // tap             → Left click (LCLK)
+            // hold            → Layer 7: trackball → scroll (scroller mode)
+            // double-tap      → Left click (LCLK)
+            // double-tap+hold → Left click held (LCLK)
         };
 
         lt_nav: nav_layer_tap {
@@ -227,6 +229,8 @@
             // Helper hold-tap (hold-preferred, 40ms, hold-while-undecided).
             // hold → &mo <layer> (momentary),  tap → &mkp <mouse-button>
         };
+
+
 
         td_clk: td_clk {
             compatible = "zmk,behavior-tap-dance";
