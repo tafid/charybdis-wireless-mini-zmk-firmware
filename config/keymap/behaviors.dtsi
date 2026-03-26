@@ -196,7 +196,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <110>;
-            bindings = <&lt_nav 1 SPACE>, <&kp SPACE>;
+            bindings = <&lt_nav 2 SPACE>, <&kp SPACE>;
 
             // tap        → SPACE
             // hold       → Layer 1 (NUM) active while held
@@ -242,7 +242,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <170>;
-            bindings = <&mo_kp 1 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&mo_kp 2 BACKSPACE>, <&kp BACKSPACE>;
 
             // tap        → BACKSPACE
             // hold       → Layer 1 (NUM) active while held
@@ -273,7 +273,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&mkp RCLK>, <&mo 8>;
+            bindings = <&mkp RCLK>, <&mo 0>;
 
             // tap/hold   → Right click (RCLK)
             // double-tap → Layer 8 active while held

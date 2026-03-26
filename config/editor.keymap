@@ -199,7 +199,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <110>;
-            bindings = <&lt_nav 1 SPACE>, <&kp SPACE>;
+            bindings = <&lt_nav 2 SPACE>, <&kp SPACE>;
 
             // tap        → SPACE
             // hold       → Layer 1 (NUM) active while held
@@ -245,7 +245,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <170>;
-            bindings = <&mo_kp 1 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&mo_kp 2 BACKSPACE>, <&kp BACKSPACE>;
 
             // tap        → BACKSPACE
             // hold       → Layer 1 (NUM) active while held
@@ -276,7 +276,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&mkp RCLK>, <&mo 8>;
+            bindings = <&mkp RCLK>, <&mo 0>;
 
             // tap/hold   → Right click (RCLK)
             // double-tap → Layer 8 active while held
@@ -694,20 +694,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp GRAVE       &kp Q            &kp W            &kp E             &kp R             &kp T        &kp Y      &kp U              &kp I              &kp O             &kp P                     &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &ht_left LCMD A  &ht_left LALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G        &kp H      &ht_right RCTRL J  &ht_right RSHFT K  &ht_right LALT L  &ht_right RCMD SEMICOLON  &kp SQT
-&kp LEFT_GUI    &kp Z            &kp X            &kp C             &kp V             &kp B        &kp N      &kp M              &kp COMMA          &kp PERIOD        &kp SLASH                 &kp RIGHT_BRACKET
-                                                  &mkp LCLK         &td_space_num     &lt 2 TAB    &kp ENTER  &lt 3 BACKSPACE
-            >;
-        };
-
-        NUM {
-            display-name = "Num";
-            bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp F12
-&trans  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5         &kp F6        &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
-                                       &none         &none         &trans         &trans        &trans
+&kp GRAVE       &kp Q            &kp W            &kp E             &kp R             &kp T        &kp Y        &kp U              &kp I              &kp O             &kp P                     &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &ht_left LCMD A  &ht_left LALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G        &kp H        &ht_right RCTRL J  &ht_right RSHFT K  &ht_right LALT L  &ht_right RCMD SEMICOLON  &kp SQT
+&kp LEFT_GUI    &kp Z            &kp X            &kp C             &kp V             &kp B        &kp N        &kp M              &kp COMMA          &kp PERIOD        &kp SLASH                 &kp RIGHT_BRACKET
+                                                  &mkp LCLK         &td_space_num     &lt 1 TAB    &lt 5 ENTER  &lt 3 BACKSPACE
             >;
         };
 
@@ -721,13 +711,23 @@
             >;
         };
 
+        NUM {
+            display-name = "Num";
+            bindings = <
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp F12
+&trans  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5         &kp F6        &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
+                                       &none         &none         &trans         &trans        &trans
+            >;
+        };
+
         SYM {
             display-name = "Sym";
             bindings = <
-&trans     &trans                &kp LESS_THAN         &kp DOLLAR         &kp GREATER_THAN       &trans      &trans       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RBKT         &trans    &kp BSLH
-&kp MINUS  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH    &kp PERCENT  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE  &kp PIPE  &kp PIPE
-&trans     &home_dir             &kp COLON             &kp ASTERISK       &kp PLUS               &trans      &trans       &kp AMPERSAND     &kp LCTRL       &kp TILDE        &trans    &kp FSLH
-                                                       &none              &trans                 &trans      &trans       &trans
+&trans     &trans         &kp LESS_THAN         &kp DOLLAR         &kp GREATER_THAN       &trans      &trans       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RBKT         &trans    &kp BSLH
+&kp MINUS  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH    &kp PERCENT  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE  &kp PIPE  &kp PIPE
+&trans     &home_dir      &kp COLON             &kp ASTERISK       &kp PLUS               &trans      &trans       &kp AMPERSAND     &kp LCTRL       &kp TILDE        &trans    &kp FSLH
+                                                &none              &trans                 &trans      &trans       &trans
             >;
         };
 
