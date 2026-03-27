@@ -42,5 +42,10 @@
             bindings = <&td_esc_scrl_slow>;
             key-positions = <13 14>;
         };
+
+        game {
+            bindings = <&td_layers>;
+            key-positions = <29 30>;
+        };
     };
 };
