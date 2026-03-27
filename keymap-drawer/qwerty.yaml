@@ -273,3 +273,5 @@ combos:
   k: _
 - p: [13, 14]
   k: ESC SCRL SLOW
+- p: [29, 30]
+  k: L_BASE L_GAME
