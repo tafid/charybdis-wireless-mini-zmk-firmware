@@ -15,7 +15,7 @@ layers:
     - {t: ;, h: RCMD}
     - ''''
   - [LEFT GUI, Z, X, C, V, B, N, M, ',', ., /, ']']
-  - - L CLK
+  - - ESC SCRL SLOW
     - '&td_space_num'
     - {t: TAB, h: Nav}
     - {t: ENTER, h: Xtra}
