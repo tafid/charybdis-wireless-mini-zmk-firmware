@@ -102,8 +102,8 @@ layers:
   - - ''
     - ''
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - INSERT
+    - DELETE
   Sym:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
