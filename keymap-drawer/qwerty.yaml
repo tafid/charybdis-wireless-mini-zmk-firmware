@@ -22,11 +22,11 @@ layers:
     - {t: BACK SPACE, h: Sym}
   Nav:
   - - {t: ▽, type: trans}
-    - WHEEL L
-    - WHEEL D
-    - ''
-    - WHEEL U
-    - WHEEL R
+    - Ctl+Gui+ F1
+    - Ctl+Gui+ F2
+    - Ctl+Gui+ F3
+    - Ctl+Gui+ F4
+    - Ctl+Gui+ F5
     - TMUX DETCH
     - TMUX ATTCH
     - TMUX NEXT
