@@ -250,6 +250,8 @@ combos:
 - p: [7, 8]
   k: _
 - p: [13, 14]
-  k: ESC SCRL SLOW
+  k: '&alt_space'
 - p: [29, 30]
   k: L_BASE L_GAME
+- p: [15, 16]
+  k: '&alt_shift_space'
