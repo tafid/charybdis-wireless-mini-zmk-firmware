@@ -38,14 +38,19 @@
             key-positions = <7 8>;
         };
 
-        esc {
-            bindings = <&td_esc_scrl_slow>;
+        alt_space {
+            bindings = <&alt_space>;
             key-positions = <13 14>;
         };
 
         game {
             bindings = <&td_layers>;
             key-positions = <29 30>;
+        };
+
+        alt_shift_space {
+            bindings = <&alt_shift_space>;
+            key-positions = <15 16>;
         };
     };
 };
