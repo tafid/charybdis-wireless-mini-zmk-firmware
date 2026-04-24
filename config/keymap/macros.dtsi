@@ -269,5 +269,37 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp TILDE>, <&macro_tap>, <&kp FSLH>;
         };
+
+        alt_space: alt_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SPACE";
+        };
+
+        alt_shift_space: alt_shift_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_press>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_SPACE";
+        };
     };
 };

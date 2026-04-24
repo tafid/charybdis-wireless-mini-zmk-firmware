@@ -597,6 +597,38 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp TILDE>, <&macro_tap>, <&kp FSLH>;
         };
+
+        alt_space: alt_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SPACE";
+        };
+
+        alt_shift_space: alt_shift_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_press>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_SPACE";
+        };
     };
 };
 
@@ -709,10 +741,10 @@
         NAV {
             display-name = "Nav";
             bindings = <
-&trans   &msc MOVE_LEFT  &msc MOVE_UP  &none      &msc MOVE_DOWN  &msc MOVE_RIGHT    &detach_session  &create_or_attach  &next_pane    &show_sessions  &sync_panes  &trans
-&kp TAB  &mkp MB4        &kp LALT      &kp LSHFT  &kp LCTRL       &mkp MB5           &kp LEFT_ARROW   &kp DOWN           &kp UP_ARROW  &kp RIGHT       &trans       &kp DELETE
-&trans   &mkp LCLK       &mkp MCLK     &mkp RCLK  &trans          &trans             &kp HOME         &kp PAGE_DOWN      &kp PAGE_UP   &kp END         &trans       &kp INS
-                                       &trans     &trans          &trans             &trans           &trans
+&trans   &kp LC(LG(F1))  &kp LC(LG(F2))  &kp LC(LG(F3))  &kp LC(LG(F4))  &kp LC(LG(F5))    &detach_session  &create_or_attach  &next_pane    &show_sessions  &sync_panes  &trans
+&kp TAB  &mkp MB4        &kp LALT        &kp LSHFT       &kp LCTRL       &mkp MB5          &kp LEFT_ARROW   &kp DOWN           &kp UP_ARROW  &kp RIGHT       &trans       &kp DELETE
+&trans   &mkp LCLK       &mkp MCLK       &mkp RCLK       &trans          &trans            &kp HOME         &kp PAGE_DOWN      &kp PAGE_UP   &kp END         &trans       &kp INS
+                                         &trans          &trans          &trans            &trans           &trans
             >;
         };
 
