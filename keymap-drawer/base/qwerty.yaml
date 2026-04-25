@@ -254,4 +254,4 @@ combos:
 - p: [29, 30]
   k: L_BASE L_GAME
 - p: [9, 10]
-  k: '&alt_shift_space'
+  k: '&gui_shift_space'
