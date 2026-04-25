@@ -249,9 +249,9 @@ combos:
   k: '-'
 - p: [7, 8]
   k: _
-- p: [13, 14]
+- p: [1, 2]
   k: '&alt_space'
 - p: [29, 30]
   k: L_BASE L_GAME
-- p: [15, 16]
+- p: [9, 10]
   k: '&alt_shift_space'
