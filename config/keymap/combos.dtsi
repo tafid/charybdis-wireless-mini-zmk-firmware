@@ -49,7 +49,7 @@
         };
 
         meta_shift_space {
-            bindings = <&alt_shift_space>;
+            bindings = <&gui_shift_space>;
             key-positions = <9 10>;
         };
     };

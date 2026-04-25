@@ -284,7 +284,7 @@
             label = "ALT_SPACE";
         };
 
-        alt_shift_space: alt_shift_space {
+        gui_shift_space: alt_shift_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -296,7 +296,7 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LALT>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_GUI>;
 
             label = "ALT_SHIFT_SPACE";
