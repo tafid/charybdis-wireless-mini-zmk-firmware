@@ -250,7 +250,7 @@ combos:
 - p: [7, 8]
   k: _
 - p: [1, 2]
-  k: '&alt_space'
+  k: '&meta_space'
 - p: [29, 30]
   k: L_BASE L_GAME
 - p: [9, 10]
