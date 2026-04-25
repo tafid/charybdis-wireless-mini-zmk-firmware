@@ -40,7 +40,7 @@
 
         alt_space {
             bindings = <&alt_space>;
-            key-positions = <13 14>;
+            key-positions = <1 2>;
         };
 
         game {
@@ -50,7 +50,7 @@
 
         alt_shift_space {
             bindings = <&alt_shift_space>;
-            key-positions = <15 16>;
+            key-positions = <9 10>;
         };
     };
 };
