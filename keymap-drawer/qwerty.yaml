@@ -22,11 +22,11 @@ layers:
     - {t: BACK SPACE, h: Sym}
   Nav:
   - - {t: ▽, type: trans}
-    - Ctl+Gui+ F1
-    - Ctl+Gui+ F2
-    - Ctl+Gui+ F3
-    - Ctl+Gui+ F4
-    - Ctl+Gui+ F5
+    - Ctl+ F1
+    - Ctl+ F2
+    - Ctl+ F3
+    - Ctl+ F4
+    - Ctl+ F5
     - TMUX DETCH
     - TMUX ATTCH
     - TMUX NEXT
