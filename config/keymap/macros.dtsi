@@ -270,16 +270,16 @@
             bindings = <&macro_tap>, <&kp TILDE>, <&macro_tap>, <&kp FSLH>;
         };
 
-        alt_space: alt_space {
+        meta_space: alt_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LEFT_GUI>;
 
             label = "ALT_SPACE";
         };
@@ -289,15 +289,15 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp LEFT_GUI>,
                 <&macro_press>,
-                <&kp LSHFT>,
+                <&kp LALT>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LSHFT>,
+                <&kp LALT>,
                 <&macro_press>,
-                <&kp LALT>;
+                <&kp LEFT_GUI>;
 
             label = "ALT_SHIFT_SPACE";
         };

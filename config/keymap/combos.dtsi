@@ -38,8 +38,8 @@
             key-positions = <7 8>;
         };
 
-        alt_space {
-            bindings = <&alt_space>;
+        meta_space {
+            bindings = <&meta_space>;
             key-positions = <1 2>;
         };
 
@@ -48,7 +48,7 @@
             key-positions = <29 30>;
         };
 
-        alt_shift_space {
+        meta_shift_space {
             bindings = <&alt_shift_space>;
             key-positions = <9 10>;
         };
