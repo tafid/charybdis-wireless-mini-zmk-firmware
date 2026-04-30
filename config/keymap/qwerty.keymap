@@ -53,7 +53,7 @@
 &trans   &kp RC(F1)  &kp RC(F2)  &kp RC(F3)  &kp RC(F4)  &kp RC(F5)    &detach_session  &create_or_attach  &next_pane    &show_sessions  &sync_panes  &trans
 &kp TAB  &mkp MB4    &kp LALT    &kp LSHFT   &kp LCTRL   &mkp MB5      &kp LEFT_ARROW   &kp DOWN           &kp UP_ARROW  &kp RIGHT       &trans       &kp DELETE
 &trans   &mkp LCLK   &mkp MCLK   &mkp RCLK   &trans      &trans        &kp HOME         &kp PAGE_DOWN      &kp PAGE_UP   &kp END         &trans       &kp INS
-                                 &trans      &trans      &trans        &trans           &trans
+                                 &trans      &trans      &trans        &kp INSERT       &kp DELETE
             >;
         };
 
@@ -63,7 +63,7 @@
 &kp F13  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5         &kp F6        &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
 &kp F14  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp F12
 &trans   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-                                        &none         &none         &trans         &kp INSERT    &kp DELETE
+                                        &none         &none         &trans         &trans        &trans
             >;
         };
 
